@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loginIcon"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/verificationTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/verify_icon" />
+
+        <TextView
+            android:id="@+id/verificationTextView"
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:text="@string/verification_screen_title"
+            android:textAlignment="center"
+            android:textColor="@color/purple_3"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/checkCodeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492" />
+
+        <TextView
+            android:id="@+id/verificationSubtitle"
+            android:layout_width="223dp"
+            android:layout_height="35dp"
+            android:text="@string/verification_text"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verificationTextView" />
+
+        <Button
+            android:id="@+id/checkCodeButton"
+            android:layout_width="292dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="92dp"
+            android:backgroundTint="@color/purple_3"
+            android:text="@string/verification_check_code_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextVerification"
+            android:layout_width="262dp"
+            android:layout_height="76dp"
+            android:ems="10"
+            android:hint="Verification code"
+            android:inputType="number"
+            android:maxLength="@integer/verification_code_length"
+            app:layout_constraintBottom_toTopOf="@+id/checkCodeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verificationTextView"
+            app:layout_constraintVertical_bias="0.7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

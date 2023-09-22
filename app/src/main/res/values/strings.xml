@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Presence</string>
+    <!-- Login/Registration screen text -->
+    <string name="registration_screen_textfield"><b>Login</b></string>
+    <string name="registration_screen_login_subtitle">Please enter your phone number to log into your account</string>
+    <string name="registration_screen_button_text">Send verification code</string>
+    <string name="registration_screen_example_number">+31 612345678</string>
+    <!-- Verification screen text -->
+    <string name="verification_screen_title"><b>Verification</b></string>
+    <string name="verification_text">Enter the 6 digit code sent to your phone number</string>
+    <string name="verification_check_code_button">Check verification code</string>
+    <!-- User settings screen text -->
+    <string name="user_settings_screen_title"><b>User Settings</b></string>
+    <string name="user_settings_screen_subtitle">Change your nickname, sign out, or delete your account</string>
+    <string name="edit_username_text">(tap to edit)</string>
+    <string name="confirm">Are you sure you want to sign out?</string>
+    <string name="confirm_sign_out">Confirm</string>
+    <string name="cancel_sign_out">Cancel</string>
+    <string name="delete_account"><b>Are you sure you want to delete your account?</b></string>
+    <string name="delete_account_warning">This action cannot be undone!</string>
+    <string name="confirm_delete_account">Yes, delete it</string>
+    <string name="cancel_delete_account">Cancel</string>
+    <!-- Moderator view message screen text -->
+    <string name="delete_message">Delete message</string>
+
+    <!-- Other -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_and_cond_intro">Before you continue, you have to confirm that you are at least 16 years old and have read our <u>terms and conditions</u>.</string>
+    <string name="unlike">Unlike</string>
+    <string name="username">Username</string>
+    <string name="like">Like</string>
+    <string name="dislike">dislike</string>
+    <string name="Dislike">Dislike</string>
+    <string name="_0">0</string>
+    <string name="resend_verification_code"><u>Resend Verification Code</u></string>
+    <string name="terms_and_cond">In return for our commitment to provide the Service, we require you to make the below commitments to us. \n \n
+Who Can Use Presence.\nWe want our Service to be as open and inclusive as possible, but we also want it to be safe, secure, and in accordance with the law. So, we need you to commit to a few restrictions in order to be part of the Presence community.\n
+•	You must be at least 16 years old.\n
+•	You must not be prohibited from receiving any aspect of our Service
+        under applicable laws or engaging in payments related Services
+        if you are on an applicable denied party listing.\n
+•	We must not have previously disabled your account for violation of law or any of our policies.\n\n
+How You Can\'t Use Presence.\n
+•	You can\'t impersonate others or provide inaccurate information.
+You don\'t have to disclose your identity on Presence, but you must provide us with accurate and up to date information (including registration information),
+        which may include providing personal data. Also, you may not impersonate someone or something you aren\'t, and you can\'t create an account for
+        someone else unless you have their express permission.\n
+•	You can\'t do anything unlawful, misleading, or fraudulent or for an illegal or unauthorized purpose.\n
+•	You can\'t violate (or help or encourage others to violate) these Terms or our policies.\n
+•	You can\'t do anything to interfere with or impair the intended operation of the Service.
+This includes misusing any reporting, dispute, or appeals channel, such as by making fraudulent or groundless reports or appeals.
+•	You can\'t attempt to create accounts or access or collect information in unauthorized ways.
+This includes creating accounts or collecting information in an automated way without our express permission.
+•	You can\’t sell, license, or purchase any account or data obtained from us or our Service.
+This includes attempts to buy, sell, or transfer any aspect of your account (including your username);
+        solicit, collect,
+        or use login credentials or badges of other users; or request
+        or collect Presence usernames, passwords, or misappropriate access tokens.\n
+•	You can\'t post someone else’s private or confidential information without permission or do anything that violates
+        someone else\'s rights, including intellectual property rights (e.g., copyright infringement, trademark infringement, counterfeit, or pirated goods).
+You may use someone else\'s works under exceptions or limitations to copyright and related rights under applicable law.
+        You represent you own or have obtained all necessary rights to the content you post or share. \n
+•	You can’t modify, translate, create derivative works of, or reverse engineer our products or their components.\n\n
+
+Permissions You Give to Us. \n
+•   As part of our agreement, you also give us permissions that we need to provide the Service.\n
+•	We do not claim ownership of your content, but you grant us a license to use it.\n
+•   You give us permission to show your username, and information about your actions (such as likes).\n
+•	You agree that we can download and install updates to the Service on your device.\n \n
+
+Additional Rights We Retain \n
+•	If you select a username or similar identifier for your account, we may change it if we believe it is appropriate or necessary
+        (for example, if it infringes someone\'s intellectual property or impersonates another user).\n
+•	If you use content covered by intellectual property rights that we have and make available
+        (for example, images, designs, videos, or sounds we provide that you add to content you create
+        or share), we retain all rights to our content (but not yours). \n
+•	You can only use our intellectual property and trademarks or similar marks with our prior written permission.\n
+•	You must obtain written permission from us or under an open source license to modify, create derivative works of, decompile,
+        or otherwise attempt to extract source code from us.\n \n
+
+Content Removal and Disabling or Terminating Your Account \n
+•	We can remove any content or information you share on the Service if we believe that it violates
+        our policies or if we are required to do so by law. We can
+        refuse to provide or stop providing all or part of the Service to you (including terminating or disabling your access to our products) immediately to protect
+        our community or services, or if you create risk or legal exposure for us, violate our policies, if you repeatedly infringe other people’s intellectual property rights,
+        or where we are required to do so by law. We can also terminate or change the Service, remove or block content or information shared on our Service,
+        or stop providing all or part of the Service if we determine that doing so is reasonably necessary to avoid or mitigate adverse legal or regulatory impacts on us.
+        In some cases when we remove content, we’ll let you know and explain any options you have to request another review, unless you seriously or repeatedly
+        violate these Terms or if doing so may expose us or others to legal liability; harm our community of users; compromise or interfere with the integrity
+        or operation of any of our services, systems, or products; where we are restricted due to technical limitations;
+        or where we are prohibited from doing so for legal reasons.\n
+•   We provide no guarantees for how long the account deletion process offered by our app takes.\n \n
+
+Our Agreement and What Happens if We Disagree
+Our Agreement.
+•	If any aspect of this agreement is unenforceable, the rest will remain in effect.\n
+•	Any amendment or waiver to our agreement must be in writing and signed by us. If we fail to
+        enforce any aspect of this agreement, it will not be a waiver. \n
+•	We reserve all rights not expressly granted to you.\n
+Who Has Rights Under this Agreement.\n
+•	This agreement does not give rights to any third parties.\n
+•	You cannot transfer your rights or obligations under this agreement without our consent.\n
+•	Our rights and obligations can be assigned to others.
+        For example, this could occur if our ownership changes (as in a merger,
+        acquisition, or sale of assets) or by law. \n
+Who Is Responsible if Something Happens.\n
+•	We will use reasonable skill and care in providing our Service to you and in keeping a safe, secure,
+        and error-free environment, but we cannot guarantee that our Service will always function without disruptions,
+        delays, or imperfections. Provided we have acted with reasonable skill and care, we do not
+        accept responsibility for: losses not caused by our breach of these Terms or otherwise by our acts; losses which are not reasonably
+        foreseeable by you and us at the time of entering into these Terms; any offensive, inappropriate, obscene, unlawful, or otherwise objectionable
+        content posted by others that you may encounter on our Service; and events beyond our reasonable control.\n
+•	The above does not exclude or limit our liability for death, personal injury, or fraudulent misrepresentation caused by our negligence.
+        It also does not exclude or limit our
+        liability for any other things where the law does not permit us to do so.\n
+How We Will Handle Disputes.\n
+If a claim or dispute arises out of or relates to your use of the Service as a consumer,
+        both you and us agree that you may resolve your individual claim or dispute against us, and we may resolve our claim or dispute against you,
+        in any competent court in the country of your main residence that has jurisdiction over your claim or dispute, and the laws of that country will apply
+        without regard to conflict of law provisions.\n
+
+If a claim or dispute arises between us that relates to use of the Service in any other capacity, including, but not limited to, access or use of the Service
+        for a business or commercial purpose, you agree that any such claim or dispute must be resolved in a competent court in Ireland and that Irish
+        law will apply without regard to conflict of law provisions.\n
+
+</string>
+</resources>

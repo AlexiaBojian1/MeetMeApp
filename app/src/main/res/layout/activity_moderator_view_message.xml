@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/RelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_3"
+    tools:context=".activities.ModeratorViewMessageActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/report_fragment_container"
+            android:name="com.example.presence.fragments.DisplayMessageFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintBottom_toTopOf="@+id/deleteMessageButton"
+            tools:layout="@layout/fragment_display_message" />
+
+        <Button
+            android:id="@+id/deleteMessageButton"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:backgroundTintMode="src_over"
+            android:text="@string/delete_message"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_fragment_container"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/reporterNicknameTextView"
+                android:layout_width="220dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="4dp"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/goToAllUserMessagesButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.337" />
+
+            <TextView
+                android:id="@+id/dateOfPosting"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:lineSpacingMultiplier="0.7"
+                android:text="TEST 10, 10:03"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/goToAllUserMessagesButton"
+                app:layout_constraintTop_toBottomOf="@+id/reporterNicknameTextView"
+                app:layout_constraintVertical_bias="0.021" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="left"
+                android:lineSpacingMultiplier="0.7"
+                android:text="Netherlands, Testoven"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/goToAllUserMessagesButton"
+                app:layout_constraintTop_toBottomOf="@+id/dateOfPosting" />
+
+            <ImageButton
+                android:id="@+id/goToAllUserMessagesButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:src="@drawable/user_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/voteView"
+                android:layout_width="94dp"
+                android:layout_height="70dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/reporterNicknameTextView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.733">
+
+                <ImageButton
+                    android:id="@+id/upvote"
+                    android:layout_width="42dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/purple_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vote" />
+
+                <ImageButton
+                    android:id="@+id/downvote"
+                    android:layout_width="42dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/purple_3"
+                    android:rotation="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vote" />
+
+                <TextView
+                    android:id="@+id/upvoteCount"
+                    android:layout_width="42dp"
+                    android:layout_height="21dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/upvote" />
+
+                <TextView
+                    android:id="@+id/downvoteCount"
+                    android:layout_width="42dp"
+                    android:layout_height="21dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/downvote" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

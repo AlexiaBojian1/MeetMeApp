@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/changeNicknameEditText"
+        android:layout_width="212dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="88dp"
+        android:hint="@string/edit_username_text"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/nickname_length"
+        android:maxLines="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSettingsSubtitle"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/userSettingsSubtitle"
+        android:layout_width="223dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/user_settings_screen_subtitle"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSettingsTitleTextView" />
+
+    <TextView
+        android:id="@+id/userSettingsTitleTextView"
+        android:layout_width="260dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/user_settings_screen_title"
+        android:textAlignment="center"
+        android:textColor="@color/purple_3"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="179dp"
+        android:layout_height="67dp"
+        android:text="sign out"
+        app:layout_constraintBottom_toTopOf="@+id/deleteAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteAccountButton"
+        android:layout_width="180dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="64dp"
+        android:text="delete account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
